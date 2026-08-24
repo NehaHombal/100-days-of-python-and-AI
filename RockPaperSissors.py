@@ -30,3 +30,5 @@ else:
 # // sissors and paper = sissors
 
 
+print("adding streaks")
+
