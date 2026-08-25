@@ -10,7 +10,7 @@ Welcome to my repository tracking my progress through Dr. Angela Yu's **100 Days
 <!-- Change the number in the URL below to update the percentage bar dynamically! -->
 ![Progress Bar](https://geps.dev[XX])
 
-- **🚀 Date Started:** [Insert Date]
+- **🚀 Date Started:** [19 August 2026]
 - **🔥 Current Streak:** [1] Days
 - **🎯 Ultimate Goal:** Build 100 projects and master Python fundamentals, automation, web dev, and data science.
 
