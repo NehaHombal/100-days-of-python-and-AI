@@ -12,24 +12,23 @@ words = [
     "adventure",
     "butterfly"
 ]
+lives = 12
 word = random.choice(words)
 display = ["_"] * len(word)
-
-lives = 10
-while lives > 0:
-    print("Can you guess the letters of :" + str(display))
-    letter = input("Type in your letter :")
-
-    for i, char in enumerate(word):
-        if letter == char:
-            display[i] = letter
-            # print("Correct " + str(display))
-        else:
-            lives -= 1
-            # print("Wrong " + str(display))
-
-    if "_" not in display:
-        print("You won!")
-    else:
-        print("You lose!")
-        print("The word was :" + word)
+while("_" in display and lives > 0):
+    guess = input("Guess a letter :")
+    for i,char in enumerate(word):
+        if char == guess:
+            display[i] = char
+        another_display = "".join(display)
+    if(guess not in word):
+        lives -= 1
+    if word == another_display:
+        print("You won")
+        break
+    elif lives == 0:
+        print("You lost")
+        break
+    print(another_display)
+    print(f"You have {lives} lives left..")
+print(f"The word was {word}")
